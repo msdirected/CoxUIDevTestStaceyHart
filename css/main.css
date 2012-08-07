@@ -1,0 +1,236 @@
+﻿@charset "utf-8";
+/* 	COX MEDIA UI CODE TEST
+    Document   : style.css
+    Created on : 06 AUG 2012
+    Author     : STACEY HART
+    Description: .css file for Cox Media UI Code Test
+	Requirements: 
+	orange: #CC6600
+	black: #202020
+	grey: #666666
+	fonts: Georgia,"Times New Roman",Times,serif and Arial,"MS Trebuchet",sans-serif
+	headline font size: 18px - The Article Headline is actually 28px?
+	article text size: 14px
+	photo cutline size: 12px
+	page gradient: vertical from #CCCCCC at the top to #FFFFFF at the bottom
+*/
+/*reset*/
+@import url('reset.css');
+/*boilerplate*/
+@import url('html5bp.css');
+html {
+	min-height: 100%;
+}
+/* Global */
+body {
+	background: rgb(204,204,204);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 );
+}
+p {
+	font-size: 14px;
+}
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+/* left & right alignment */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+/* Consistent margins */
+.inside {
+	margin: 0 20px 0 20px;
+}
+/* layout */
+#wrap {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+	height: auto;
+	top: 50px;
+}
+/* breadcrumbs */
+#bread ul {
+	margin: 0 auto;
+	padding-left: 0;
+	display: inline;
+	border: none;
+	top: 20px;
+}
+#bread ul li {
+	margin-left: 0;
+	padding-left: 2px;
+	border: none;
+	list-style: none;
+	display: inline;
+}
+#bread-gen ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	border: none;
+}
+#bread-gen ul li {
+	margin-left: 0;
+	padding-left: 2px;
+	border: none;
+	list-style: none;
+	display: inline;
+}
+#bread-gen ul li:before {
+	content: "\0020 \0020 \0020 \00BB \0020";
+}
+#bread-gen ul li.first:before {
+	content: " ";
+}
+/* Header */
+header {
+	float: left;
+	width: 100%;
+}
+.headline {
+	color: #202020;
+	font-weight: bold;
+	line-height: 40px;
+}
+nav {
+	width: 960px;
+}
+/* Content */
+article {
+	float: left;
+	width: 680px;
+}
+/* Sidebar */
+aside {
+	width: 220px;
+	float: right;
+}
+aside img {
+	margin:12px 12px 12px 0px;
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+	background-color: #FFF;
+}
+figcaption {
+	clear: both;
+	font-size: 9px;
+	text-align: right;
+	line-height: 8px;
+	padding-right: 12px;
+}
+/* article css */
+.author {
+	color: #CC6600;
+	font-weight: bold;
+	line-height: 12px;
+}
+.source {
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.pub {
+	font-size: 10px;
+	color: #666666;
+	text-align: left;
+	vertical-align: top;
+}
+.update {
+	font-size: 10px;
+	color: #666666;
+	line-height: 9px;
+	text-align: left;
+}
+.newstext {
+	text-align: left;
+	line-height: 16px;
+	font-size: 14px;
+}
+.caption {
+	font-size: 12px;
+	text-align: justify;
+	line-height: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+}
+/* top icon links */
+#iconNav {
+	border-top: 1px dotted #333333;
+	margin: 10px 0;
+	padding: 5px 0 0;
+}
+#iconNav ul {
+	line-height: 1.4em;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#iconNav li {
+	border-left: 1px dotted #333333;
+	display: inline;
+	font-size: 11px;
+	margin: 20px 2px 0 0;
+	padding-left: 8px;
+}
+#iconNav li a {
+	padding: 0 5px 0 17px;
+	color: #202020;
+}
+#iconNav li a:hover {
+	padding: 0 5px 0 17px;
+	color: #CC6600;
+}
+#iconNav li.firstItem {
+	border-left: none;
+	padding-left: 3px;
+}
+.post {
+	background-position: 0 -480px;
+}
+.em {
+	background-position: 0 -255px;
+}
+.print {
+	background-position: 0 -300px;
+}
+.share {
+	background-position: 0 -345px;
+}
+.lgFont {
+	background-position: 0 -390px;
+}
+.smFont {
+	background-position: 0 -435px;
+}
+.sprite {
+	background-image: url(../img/sprites.gif);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+}
+.sprite:hover {
+	background-image: url(../img/sprites_hover.gif);
+	background-repeat: no-repeat;
+	padding-left: 17px;
+}
+/* Footer */
+#footWrap {
+	width: 960px;
+	height: auto;
+}
+
